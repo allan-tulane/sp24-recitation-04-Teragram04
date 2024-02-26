@@ -37,9 +37,7 @@ def word_count_map(doc):
     [('i', 1), ('am', 1), ('sam', 1), ('i', 1), ('am', 1)]
     """
     ###TODO
-    
-    
-
+    return [(word, 1) for word in doc.split()]    #Split the doc into individual words using doc.split() and return a list of tuples of form (token, 1) for each word.
 
 def word_count_reduce(group):
     """
@@ -54,6 +52,8 @@ def word_count_reduce(group):
     NOTE: you should use call the `reduce` function here.
     """
     ###TODO
+    #Not sure return (group[0], reduce())
+    
     
     
 
