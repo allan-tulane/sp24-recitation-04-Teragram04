@@ -122,4 +122,4 @@ def sentiment_map(doc,
     [('negative', 1), ('negative', 1)]
     """
     ###TODO
-
+    return [(word, 1) for word in doc.split() if word in neg_terms] + [(word, 1) for word in doc.split() if word in pos_terms] 
