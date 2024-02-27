@@ -52,8 +52,7 @@ def word_count_reduce(group):
     NOTE: you should use call the `reduce` function here.
     """
     ###TODO
-    #Not sure return (group[0], reduce())
-    
+    return (group[0], reduce(lambda x, y: x + y, group[0],group[1]))
     
     
 
